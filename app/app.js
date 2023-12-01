@@ -5,7 +5,7 @@ const app = express();
 const port = 3000;
 
 // MongoDB 연결 설정
-mongoose.connect("mongodb://localhost:27017/webexample", {
+mongoose.connect("mongodb://host.docker.internal:27017/webexample", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
