@@ -7,6 +7,10 @@ WORKDIR /app
 # 애플리케이션 소스 코드 복사
 COPY package*.json ./
 RUN npm install
+
+# mongoose 추가
+RUN npm install mongoose
+
 COPY . .
 
 # 애플리케이션 포트 설정
